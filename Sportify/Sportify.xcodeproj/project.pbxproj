@@ -20,6 +20,7 @@
 		0D3EF2AC1C0DB2EC00CF7073 /* TTAuthenticateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2AB1C0DB2EC00CF7073 /* TTAuthenticateViewController.m */; };
 		0D3EF2AF1C0DB30100CF7073 /* TTRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2AE1C0DB30100CF7073 /* TTRegisterViewController.m */; };
 		0D3EF2B61C0DB80000CF7073 /* TTAddActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2B51C0DB80000CF7073 /* TTAddActivityViewController.m */; };
+		EFC45CF0B84D7E077B6A18C9 /* libPods-Sportify.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D0208F66C3288497A1B55B /* libPods-Sportify.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,9 @@
 		0D3EF2AE1C0DB30100CF7073 /* TTRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRegisterViewController.m; sourceTree = "<group>"; };
 		0D3EF2B41C0DB80000CF7073 /* TTAddActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAddActivityViewController.h; sourceTree = "<group>"; };
 		0D3EF2B51C0DB80000CF7073 /* TTAddActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAddActivityViewController.m; sourceTree = "<group>"; };
+		3CFB77F97BF6E063210B1AB6 /* Pods-Sportify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sportify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sportify/Pods-Sportify.release.xcconfig"; sourceTree = "<group>"; };
+		A4D0208F66C3288497A1B55B /* libPods-Sportify.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sportify.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA943F2B77B5C92E685142D8 /* Pods-Sportify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sportify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sportify/Pods-Sportify.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC45CF0B84D7E077B6A18C9 /* libPods-Sportify.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +89,8 @@
 				0D3EF2721C0D9E5200CF7073 /* Sportify */,
 				0D3EF28C1C0D9E5200CF7073 /* SportifyTests */,
 				0D3EF2711C0D9E5200CF7073 /* Products */,
+				2BE426AB02E1782F857FA9A3 /* Pods */,
+				209108DCBA01E86564A08332 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 1;
@@ -199,6 +206,23 @@
 			path = AddActivity;
 			sourceTree = "<group>";
 		};
+		209108DCBA01E86564A08332 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4D0208F66C3288497A1B55B /* libPods-Sportify.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BE426AB02E1782F857FA9A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA943F2B77B5C92E685142D8 /* Pods-Sportify.debug.xcconfig */,
+				3CFB77F97BF6E063210B1AB6 /* Pods-Sportify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D3EF2931C0D9E5200CF7073 /* Build configuration list for PBXNativeTarget "Sportify" */;
 			buildPhases = (
+				6EBD6AAC2DA9189179606C06 /* Check Pods Manifest.lock */,
 				0D3EF26C1C0D9E5100CF7073 /* Sources */,
 				0D3EF26D1C0D9E5100CF7073 /* Frameworks */,
 				0D3EF26E1C0D9E5100CF7073 /* Resources */,
+				511BA2FC4A4FF203ED9D28E4 /* Embed Pods Frameworks */,
+				C5C01CB8A45C3E5FFFD918AB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,6 +321,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		511BA2FC4A4FF203ED9D28E4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sportify/Pods-Sportify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EBD6AAC2DA9189179606C06 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C01CB8A45C3E5FFFD918AB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sportify/Pods-Sportify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0D3EF26C1C0D9E5100CF7073 /* Sources */ = {
@@ -434,6 +509,7 @@
 		};
 		0D3EF2941C0D9E5200CF7073 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA943F2B77B5C92E685142D8 /* Pods-Sportify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Sportify/Info.plist;
@@ -445,6 +521,7 @@
 		};
 		0D3EF2951C0D9E5200CF7073 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CFB77F97BF6E063210B1AB6 /* Pods-Sportify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Sportify/Info.plist;
@@ -507,6 +584,7 @@
 				0D3EF2951C0D9E5200CF7073 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D3EF2961C0D9E5200CF7073 /* Build configuration list for PBXNativeTarget "SportifyTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +593,7 @@
 				0D3EF2981C0D9E5200CF7073 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
