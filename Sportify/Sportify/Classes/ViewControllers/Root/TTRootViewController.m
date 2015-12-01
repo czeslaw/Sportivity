@@ -7,7 +7,23 @@
 //
 
 #import "TTRootViewController.h"
+#import <Parse/Parse.h>
+
+static NSString *const kIdentifierSegueRootToAuthenticate = @"kIdentifierSegueRootToAuthenticate";
 
 @implementation TTRootViewController
+
+- (void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+	
+	if ([PFUser currentUser].isAuthenticated) {
+		
+//		TODO: perform data fetch
+	}
+	else {
+		
+		[self performSegueWithIdentifier:kIdentifierSegueRootToAuthenticate sender:self];
+	}
+}
 
 @end

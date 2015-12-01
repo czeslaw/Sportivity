@@ -187,10 +187,10 @@
 		0D3EF2A61C0DB2C900CF7073 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				0D3EF2A71C0DB2D200CF7073 /* TTLoginViewController.h */,
-				0D3EF2A81C0DB2D200CF7073 /* TTLoginViewController.m */,
 				0D3EF2AA1C0DB2EC00CF7073 /* TTAuthenticateViewController.h */,
 				0D3EF2AB1C0DB2EC00CF7073 /* TTAuthenticateViewController.m */,
+				0D3EF2A71C0DB2D200CF7073 /* TTLoginViewController.h */,
+				0D3EF2A81C0DB2D200CF7073 /* TTLoginViewController.m */,
 				0D3EF2AD1C0DB30100CF7073 /* TTRegisterViewController.h */,
 				0D3EF2AE1C0DB30100CF7073 /* TTRegisterViewController.m */,
 			);

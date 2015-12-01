@@ -39,13 +39,13 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ty-ir-gVN">
                                 <rect key="frame" x="0.0" y="302" width="600" height="300"/>
                                 <connections>
-                                    <segue destination="u4B-t6-e0N" kind="show" id="2IE-3m-QEL"/>
+                                    <segue destination="u4B-t6-e0N" kind="embed" id="YJ8-UQ-51w"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ejz-7e-eQo">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                 <connections>
-                                    <segue destination="Drp-TE-mm9" kind="show" id="ht1-ns-C5G"/>
+                                    <segue destination="Drp-TE-mm9" kind="embed" id="JlS-oC-DBA"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -91,7 +91,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="jL5-N4-W45" kind="presentation" id="Ynb-44-FAd"/>
+                        <segue destination="jL5-N4-W45" kind="presentation" identifier="kIdentifierSegueRootToAuthenticate" id="Ynb-44-FAd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -107,7 +107,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wAh-fB-9Fh"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UIO-Kr-YnX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -126,7 +126,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2pj-tl-s1t"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hwi-Wv-t1n">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
