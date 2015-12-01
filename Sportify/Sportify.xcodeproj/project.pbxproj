@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		0D3EF2761C0D9E5200CF7073 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2751C0D9E5200CF7073 /* main.m */; };
 		0D3EF2791C0D9E5200CF7073 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2781C0D9E5200CF7073 /* AppDelegate.m */; };
-		0D3EF27C1C0D9E5200CF7073 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF27B1C0D9E5200CF7073 /* ViewController.m */; };
 		0D3EF27F1C0D9E5200CF7073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3EF27D1C0D9E5200CF7073 /* Main.storyboard */; };
 		0D3EF2811C0D9E5200CF7073 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D3EF2801C0D9E5200CF7073 /* Images.xcassets */; };
 		0D3EF2841C0D9E5200CF7073 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3EF2821C0D9E5200CF7073 /* LaunchScreen.xib */; };
 		0D3EF2901C0D9E5200CF7073 /* SportifyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF28F1C0D9E5200CF7073 /* SportifyTests.m */; };
+		0D3EF29E1C0DB21C00CF7073 /* TTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF29D1C0DB21C00CF7073 /* TTNavigationController.m */; };
+		0D3EF2A11C0DB22B00CF7073 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2A01C0DB22B00CF7073 /* TTBaseViewController.m */; };
+		0D3EF2A51C0DB25000CF7073 /* TTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2A41C0DB25000CF7073 /* TTRootViewController.m */; };
+		0D3EF2A91C0DB2D200CF7073 /* TTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2A81C0DB2D200CF7073 /* TTLoginViewController.m */; };
+		0D3EF2AC1C0DB2EC00CF7073 /* TTAuthenticateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2AB1C0DB2EC00CF7073 /* TTAuthenticateViewController.m */; };
+		0D3EF2AF1C0DB30100CF7073 /* TTRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2AE1C0DB30100CF7073 /* TTRegisterViewController.m */; };
+		0D3EF2B61C0DB80000CF7073 /* TTAddActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2B51C0DB80000CF7073 /* TTAddActivityViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +38,26 @@
 		0D3EF2751C0D9E5200CF7073 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D3EF2771C0D9E5200CF7073 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D3EF2781C0D9E5200CF7073 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0D3EF27A1C0D9E5200CF7073 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0D3EF27B1C0D9E5200CF7073 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0D3EF27E1C0D9E5200CF7073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D3EF2801C0D9E5200CF7073 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0D3EF2831C0D9E5200CF7073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0D3EF2891C0D9E5200CF7073 /* SportifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3EF28E1C0D9E5200CF7073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D3EF28F1C0D9E5200CF7073 /* SportifyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SportifyTests.m; sourceTree = "<group>"; };
+		0D3EF29C1C0DB21C00CF7073 /* TTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigationController.h; sourceTree = "<group>"; };
+		0D3EF29D1C0DB21C00CF7073 /* TTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNavigationController.m; sourceTree = "<group>"; };
+		0D3EF29F1C0DB22B00CF7073 /* TTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseViewController.h; sourceTree = "<group>"; };
+		0D3EF2A01C0DB22B00CF7073 /* TTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseViewController.m; sourceTree = "<group>"; };
+		0D3EF2A31C0DB25000CF7073 /* TTRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRootViewController.h; sourceTree = "<group>"; };
+		0D3EF2A41C0DB25000CF7073 /* TTRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRootViewController.m; sourceTree = "<group>"; };
+		0D3EF2A71C0DB2D200CF7073 /* TTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLoginViewController.h; sourceTree = "<group>"; };
+		0D3EF2A81C0DB2D200CF7073 /* TTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLoginViewController.m; sourceTree = "<group>"; };
+		0D3EF2AA1C0DB2EC00CF7073 /* TTAuthenticateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAuthenticateViewController.h; sourceTree = "<group>"; };
+		0D3EF2AB1C0DB2EC00CF7073 /* TTAuthenticateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAuthenticateViewController.m; sourceTree = "<group>"; };
+		0D3EF2AD1C0DB30100CF7073 /* TTRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRegisterViewController.h; sourceTree = "<group>"; };
+		0D3EF2AE1C0DB30100CF7073 /* TTRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRegisterViewController.m; sourceTree = "<group>"; };
+		0D3EF2B41C0DB80000CF7073 /* TTAddActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAddActivityViewController.h; sourceTree = "<group>"; };
+		0D3EF2B51C0DB80000CF7073 /* TTAddActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAddActivityViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +86,7 @@
 				0D3EF2711C0D9E5200CF7073 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		0D3EF2711C0D9E5200CF7073 /* Products */ = {
 			isa = PBXGroup;
@@ -83,8 +102,7 @@
 			children = (
 				0D3EF2771C0D9E5200CF7073 /* AppDelegate.h */,
 				0D3EF2781C0D9E5200CF7073 /* AppDelegate.m */,
-				0D3EF27A1C0D9E5200CF7073 /* ViewController.h */,
-				0D3EF27B1C0D9E5200CF7073 /* ViewController.m */,
+				0D3EF2991C0DB1D100CF7073 /* Classes */,
 				0D3EF27D1C0D9E5200CF7073 /* Main.storyboard */,
 				0D3EF2801C0D9E5200CF7073 /* Images.xcassets */,
 				0D3EF2821C0D9E5200CF7073 /* LaunchScreen.xib */,
@@ -117,6 +135,68 @@
 				0D3EF28E1C0D9E5200CF7073 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D3EF2991C0DB1D100CF7073 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0D3EF29A1C0DB1E000CF7073 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0D3EF29A1C0DB1E000CF7073 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D3EF2B01C0DB70000CF7073 /* AddActivity */,
+				0D3EF2A61C0DB2C900CF7073 /* Login */,
+				0D3EF2A21C0DB24800CF7073 /* Root */,
+				0D3EF29B1C0DB1F100CF7073 /* Base */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0D3EF29B1C0DB1F100CF7073 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0D3EF29C1C0DB21C00CF7073 /* TTNavigationController.h */,
+				0D3EF29D1C0DB21C00CF7073 /* TTNavigationController.m */,
+				0D3EF29F1C0DB22B00CF7073 /* TTBaseViewController.h */,
+				0D3EF2A01C0DB22B00CF7073 /* TTBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		0D3EF2A21C0DB24800CF7073 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				0D3EF2A31C0DB25000CF7073 /* TTRootViewController.h */,
+				0D3EF2A41C0DB25000CF7073 /* TTRootViewController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		0D3EF2A61C0DB2C900CF7073 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0D3EF2A71C0DB2D200CF7073 /* TTLoginViewController.h */,
+				0D3EF2A81C0DB2D200CF7073 /* TTLoginViewController.m */,
+				0D3EF2AA1C0DB2EC00CF7073 /* TTAuthenticateViewController.h */,
+				0D3EF2AB1C0DB2EC00CF7073 /* TTAuthenticateViewController.m */,
+				0D3EF2AD1C0DB30100CF7073 /* TTRegisterViewController.h */,
+				0D3EF2AE1C0DB30100CF7073 /* TTRegisterViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0D3EF2B01C0DB70000CF7073 /* AddActivity */ = {
+			isa = PBXGroup;
+			children = (
+				0D3EF2B41C0DB80000CF7073 /* TTAddActivityViewController.h */,
+				0D3EF2B51C0DB80000CF7073 /* TTAddActivityViewController.m */,
+			);
+			path = AddActivity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +243,7 @@
 		0D3EF2681C0D9E5100CF7073 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TT;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Tooploox;
 				TargetAttributes = {
@@ -219,9 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D3EF27C1C0D9E5200CF7073 /* ViewController.m in Sources */,
+				0D3EF2A91C0DB2D200CF7073 /* TTLoginViewController.m in Sources */,
+				0D3EF2AF1C0DB30100CF7073 /* TTRegisterViewController.m in Sources */,
+				0D3EF29E1C0DB21C00CF7073 /* TTNavigationController.m in Sources */,
 				0D3EF2791C0D9E5200CF7073 /* AppDelegate.m in Sources */,
+				0D3EF2AC1C0DB2EC00CF7073 /* TTAuthenticateViewController.m in Sources */,
+				0D3EF2A51C0DB25000CF7073 /* TTRootViewController.m in Sources */,
+				0D3EF2B61C0DB80000CF7073 /* TTAddActivityViewController.m in Sources */,
 				0D3EF2761C0D9E5200CF7073 /* main.m in Sources */,
+				0D3EF2A11C0DB22B00CF7073 /* TTBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Sportify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Sportify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
