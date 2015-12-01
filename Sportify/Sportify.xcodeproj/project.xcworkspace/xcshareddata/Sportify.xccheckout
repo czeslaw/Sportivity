@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C68727D9-4451-4747-BB5B-20814CD03A77</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>142EDC579367B45DEC40A94AA60551C13923BC98</key>
+		<string>https://github.com/czeslaw/Sportivity.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Sportify/Sportify.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>142EDC579367B45DEC40A94AA60551C13923BC98</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/czeslaw/Sportivity.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>142EDC579367B45DEC40A94AA60551C13923BC98</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>142EDC579367B45DEC40A94AA60551C13923BC98</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Sportivity</string>
+		</dict>
+	</array>
+</dict>
+</plist>
