@@ -247,14 +247,16 @@ typedef NS_ENUM(NSInteger, TTAuthenticationState){
 	__weak typeof (self) weakSelf = self;
 
 //TODO: hardcoded strings
-	TTProgressHUD *progressHUD = [TTProgressHUD showProgressHUDWithTitle:@"Logging in..."
-														inViewController:self];
+	__block TTProgressHUD *progressHUD = [TTProgressHUD showProgressHUDWithTitle:@"Logging in..."
+														inViewController:self.navigationController];
 	
 //TODO: add progress handler and block UI
 	[PFUser logInWithUsernameInBackground:self.textFieldUsername.text
 								 password:self.textFieldPassword.text
 									block:^(PFUser *user, NSError *error) {
 	
+										[progressHUD hide];
+										
 										if (error) {
 											
 //TODO: hardcoded strings
@@ -276,10 +278,14 @@ typedef NS_ENUM(NSInteger, TTAuthenticationState){
 
 	__weak typeof (self) weakSelf = self;
 	
-//TODO: add progress handler and block UI
 	PFUser *user = [PFUser user];
 	user.username = self.textFieldUsername.text;
 	user.password = self.textFieldPassword.text;
+	
+//TODO: hardcoded strings
+	__block TTProgressHUD *progressHUD = [TTProgressHUD showProgressHUDWithTitle:@"Logging in..."
+																inViewController:self.navigationController];
+	
 	[user signUpInBackgroundWithBlock:^(BOOL succeed, NSError *error) {
 		
 		if (error) {

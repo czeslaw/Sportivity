@@ -21,43 +21,48 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YDB-bO-3mm">
-                            <rect key="frame" x="30" y="159" width="150" height="2"/>
+                            <rect key="frame" x="20" y="159" width="160" height="2"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="2" id="f7E-IS-Ivk"/>
                             </constraints>
                         </progressView>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pM4-kX-riJ">
+                            <rect key="frame" x="82" y="81" width="37" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="UV9-On-Li4"/>
+                                <constraint firstAttribute="width" constant="37" id="hFB-hl-1C2"/>
+                            </constraints>
+                        </activityIndicatorView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="YDB-bO-3mm" firstAttribute="leading" secondItem="LQY-8C-JD7" secondAttribute="leading" constant="30" id="0ii-gL-ySI"/>
+                        <constraint firstItem="YDB-bO-3mm" firstAttribute="leading" secondItem="LQY-8C-JD7" secondAttribute="leading" constant="20" id="0ii-gL-ySI"/>
+                        <constraint firstItem="pM4-kX-riJ" firstAttribute="top" secondItem="4ec-6r-PdO" secondAttribute="bottom" constant="11" id="2Ue-8q-0d1"/>
                         <constraint firstAttribute="width" constant="200" id="AJt-Rj-h6R"/>
+                        <constraint firstItem="YDB-bO-3mm" firstAttribute="top" secondItem="pM4-kX-riJ" secondAttribute="bottom" constant="41" id="QYZ-KE-98l"/>
                         <constraint firstItem="4ec-6r-PdO" firstAttribute="top" secondItem="LQY-8C-JD7" secondAttribute="top" constant="20" id="SSO-ih-qmq"/>
-                        <constraint firstItem="YDB-bO-3mm" firstAttribute="top" secondItem="4ec-6r-PdO" secondAttribute="bottom" constant="89" id="TFN-t4-qiF"/>
                         <constraint firstAttribute="bottom" secondItem="YDB-bO-3mm" secondAttribute="bottom" constant="39" id="gvB-po-GFi"/>
                         <constraint firstAttribute="height" constant="200" id="i83-Wu-bmh"/>
                         <constraint firstAttribute="trailing" secondItem="4ec-6r-PdO" secondAttribute="trailing" constant="20" id="l4m-km-fpu"/>
                         <constraint firstAttribute="trailing" secondItem="YDB-bO-3mm" secondAttribute="trailing" constant="20" id="m0s-rN-a7V"/>
                         <constraint firstItem="4ec-6r-PdO" firstAttribute="leading" secondItem="LQY-8C-JD7" secondAttribute="leading" constant="20" id="qIf-a3-33M"/>
+                        <constraint firstAttribute="centerX" secondItem="pM4-kX-riJ" secondAttribute="centerX" id="wVt-8o-vLm"/>
                     </constraints>
                 </view>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="bFW-5I-0MQ">
-                    <rect key="frame" x="132" y="145" width="37" height="37"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="37" id="7l1-sJ-9m1"/>
-                        <constraint firstAttribute="width" constant="37" id="Clm-B8-kw7"/>
-                    </constraints>
-                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="LQY-8C-JD7" secondAttribute="centerX" id="02P-aT-ddg"/>
-                <constraint firstAttribute="centerX" secondItem="bFW-5I-0MQ" secondAttribute="centerX" id="Cp7-rl-V9q"/>
-                <constraint firstItem="bFW-5I-0MQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="145" id="ODX-De-px4"/>
-                <constraint firstAttribute="bottom" secondItem="bFW-5I-0MQ" secondAttribute="bottom" constant="118" id="QlF-q7-USX"/>
                 <constraint firstAttribute="centerY" secondItem="LQY-8C-JD7" secondAttribute="centerY" id="mFZ-UU-mnf"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activityIndicator" destination="pM4-kX-riJ" id="7A9-fm-Cb5"/>
+                <outlet property="labelTitle" destination="4ec-6r-PdO" id="MwG-Vx-OZW"/>
+                <outlet property="progressView" destination="YDB-bO-3mm" id="s2X-aK-WNC"/>
+                <outlet property="viewContainer" destination="LQY-8C-JD7" id="0r2-i6-ufY"/>
+            </connections>
             <point key="canvasLocation" x="-348.5" y="-380"/>
         </view>
     </objects>

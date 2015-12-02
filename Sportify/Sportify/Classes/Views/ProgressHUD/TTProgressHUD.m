@@ -10,7 +10,8 @@
 #import "UIColor+TTColor.h"
 
 static const CGFloat kProgressHUDMinimumScale = 0.01f;
-static const CGFloat kProgressHUDContainerCornerRadius = 4.0f;
+static const CGFloat kProgressHUDContainerCornerRadius = 12.0f;
+static const CGFloat kProgressHUDMinimumProgress = 0.01f;
 
 @interface TTProgressHUD ()
 
@@ -34,7 +35,9 @@ static const CGFloat kProgressHUDContainerCornerRadius = 4.0f;
 	self.viewContainer.layer.masksToBounds = YES;
 	self.viewContainer.backgroundColor = [UIColor blackColor];
 	
-	self.progressView.progress = 0.0f;
+	[self setProgressTo:0.0f];
+	
+	[self.activityIndicator startAnimating];
 }
 
 #pragma mark - Public Methods
@@ -48,6 +51,10 @@ static const CGFloat kProgressHUDContainerCornerRadius = 4.0f;
 	
 	progressHUD.title = paramTitle;
 	
+	progressHUD.parentViewController = paramViewController;
+	[progressHUD.parentViewController.view addSubview:progressHUD];
+	progressHUD.frame = progressHUD.parentViewController.view.bounds;
+	
 	progressHUD.transform = CGAffineTransformScale(progressHUD.transform,
 												   kProgressHUDMinimumScale,
 												   kProgressHUDMinimumScale);
@@ -57,6 +64,7 @@ static const CGFloat kProgressHUDContainerCornerRadius = 4.0f;
 						options:UIViewAnimationOptionCurveEaseInOut
 					 animations:^{
 						 
+//TODO: potential enhancement: make the animation bounce
 						 progressHUD.transform = CGAffineTransformIdentity;
 						 progressHUD.alpha = 1.0f;
 					 }
@@ -66,6 +74,8 @@ static const CGFloat kProgressHUDContainerCornerRadius = 4.0f;
 }
 
 - (void)hide{
+	
+	[self.activityIndicator stopAnimating];
 	
 	[UIView animateWithDuration:[UIApplication sharedApplication].statusBarOrientationAnimationDuration
 						  delay:0.0f
@@ -79,6 +89,7 @@ static const CGFloat kProgressHUDContainerCornerRadius = 4.0f;
 					 }
 					 completion:^(BOOL finished) {
 						 
+						 self.parentViewController = nil;
 						 [self removeFromSuperview];
 					 }];
 }
@@ -88,6 +99,7 @@ static const CGFloat kProgressHUDContainerCornerRadius = 4.0f;
 - (void)setProgressTo:(CGFloat)paramProgress{
 
 	self.progressView.progress = paramProgress;
+	self.progressView.hidden = (paramProgress < kProgressHUDMinimumProgress);
 }
 
 - (void)setTitle:(NSString *)paramTitle {

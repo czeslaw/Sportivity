@@ -8,6 +8,7 @@
 
 #import "TTRootViewController.h"
 #import <Parse/Parse.h>
+#import "TTProgressHUD.h"
 
 static NSString *const kIdentifierSegueRootToAuthenticate = @"kIdentifierSegueRootToAuthenticate";
 
@@ -47,9 +48,13 @@ static NSString *const kIdentifierSegueRootToAuthenticate = @"kIdentifierSegueRo
 
 	__weak typeof (self) weakSelf = self;
 	
-//TODO: add preogress handler
+	__block TTProgressHUD *progressHUD = [TTProgressHUD showProgressHUDWithTitle:@"Logging out..."
+																inViewController:self.navigationController];
+	
 	[PFUser logOutInBackgroundWithBlock:^(NSError *error){
 	
+		[progressHUD hide];
+		
 		if (error) {
 //TODO: hardcoded strings
 			[[[UIAlertView alloc] initWithTitle:@"Something went wrong"
