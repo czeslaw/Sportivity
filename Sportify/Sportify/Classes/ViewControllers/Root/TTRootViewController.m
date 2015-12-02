@@ -9,6 +9,9 @@
 #import "TTRootViewController.h"
 #import <Parse/Parse.h>
 #import "TTProgressHUD.h"
+#import "TTActivitiesDatasource.h"
+#import "TTActivityTypesDatasource.h"
+#import "TTNetworkingEngine.h"
 
 static NSString *const kIdentifierSegueRootToAuthenticate = @"kIdentifierSegueRootToAuthenticate";
 
@@ -34,12 +37,51 @@ static NSString *const kIdentifierSegueRootToAuthenticate = @"kIdentifierSegueRo
 	
 	if ([PFUser currentUser].isAuthenticated) {
 		
-//TODO: perform data fetch
+		[self refreshData];
 	}
 	else {
 		
 		[self performSegueWithIdentifier:kIdentifierSegueRootToAuthenticate sender:self];
 	}
+}
+
+#pragma mark - Data Refresh
+
+- (void)refreshData {
+
+//TODO: hardcoded strings
+	__block TTProgressHUD *progressHUD = [TTProgressHUD showProgressHUDWithTitle:@"Synchronizing..."
+																inViewController:self.navigationController];
+	
+	[[TTNetworkingEngine sharedInstance] synchronizeWithProgressHandler:^(CGFloat progress) {
+	
+		[progressHUD setProgressTo:progress];
+	}
+													  completionHandler:^(NSError *error) {
+		
+														  if (error) {
+															  
+															  [[[UIAlertView alloc] initWithTitle:@"Something went wrong..."
+																						  message:error.localizedDescription
+																						 delegate:nil
+																				cancelButtonTitle:@"OK"
+																				otherButtonTitles:nil]
+															   show];
+														  }
+														  
+														  NSLog(@"activities: ");
+														  for (TTActivity *activity in [[TTActivitiesDatasource sharedInstance] arrayObjects]) {
+															  
+															  NSLog(@"%@",activity.parseObject);
+														  }
+														  NSLog(@"activity types: ");
+														  for (TTActivityType *activityType in [[TTActivityTypesDatasource sharedInstance] arrayObjects]) {
+															  
+															  NSLog(@"%@",activityType.parseObject);
+														  }
+														  
+														  [progressHUD hide];
+													  }];
 }
 
 #pragma mark - Action handling
@@ -66,9 +108,18 @@ static NSString *const kIdentifierSegueRootToAuthenticate = @"kIdentifierSegueRo
 		}
 		else {
 		
-			[weakSelf performSegueWithIdentifier:kIdentifierSegueRootToAuthenticate sender:weakSelf];
+			[weakSelf cleanUpAfterLogout];
 		}
 	}];
+}
+
+#pragma mark - Clean Up
+
+- (void)cleanUpAfterLogout {
+	
+	[[TTActivityTypesDatasource sharedInstance] populateWithObjects:nil];
+	[[TTActivitiesDatasource sharedInstance] populateWithObjects:nil];
+	[self performSegueWithIdentifier:kIdentifierSegueRootToAuthenticate sender:self];
 }
 
 @end
