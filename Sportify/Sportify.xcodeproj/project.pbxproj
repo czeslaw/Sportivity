@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D322EA71C0F1002001F8EC2 /* TTProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D322EA61C0F1002001F8EC2 /* TTProgressHUD.m */; };
+		0D322EA91C0F102C001F8EC2 /* TTProgressHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D322EA81C0F102C001F8EC2 /* TTProgressHUD.xib */; };
+		0D322EAD1C0F1488001F8EC2 /* UIColor+TTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D322EAC1C0F1488001F8EC2 /* UIColor+TTColor.m */; };
 		0D3EF2761C0D9E5200CF7073 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2751C0D9E5200CF7073 /* main.m */; };
 		0D3EF2791C0D9E5200CF7073 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2781C0D9E5200CF7073 /* AppDelegate.m */; };
 		0D3EF27F1C0D9E5200CF7073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3EF27D1C0D9E5200CF7073 /* Main.storyboard */; };
@@ -32,6 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D322EA51C0F1002001F8EC2 /* TTProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTProgressHUD.h; sourceTree = "<group>"; };
+		0D322EA61C0F1002001F8EC2 /* TTProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTProgressHUD.m; sourceTree = "<group>"; };
+		0D322EA81C0F102C001F8EC2 /* TTProgressHUD.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTProgressHUD.xib; sourceTree = "<group>"; };
+		0D322EAB1C0F1488001F8EC2 /* UIColor+TTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TTColor.h"; sourceTree = "<group>"; };
+		0D322EAC1C0F1488001F8EC2 /* UIColor+TTColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TTColor.m"; sourceTree = "<group>"; };
 		0D3EF2701C0D9E5200CF7073 /* Sportify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sportify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3EF2741C0D9E5200CF7073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D3EF2751C0D9E5200CF7073 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,6 +85,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D322EA31C0F0FEB001F8EC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D322EA41C0F0FF5001F8EC2 /* ProgressHUD */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D322EA41C0F0FF5001F8EC2 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0D322EA51C0F1002001F8EC2 /* TTProgressHUD.h */,
+				0D322EA61C0F1002001F8EC2 /* TTProgressHUD.m */,
+				0D322EA81C0F102C001F8EC2 /* TTProgressHUD.xib */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		0D322EAA1C0F1468001F8EC2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0D322EAB1C0F1488001F8EC2 /* UIColor+TTColor.h */,
+				0D322EAC1C0F1488001F8EC2 /* UIColor+TTColor.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		0D3EF2671C0D9E5100CF7073 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +176,8 @@
 		0D3EF2991C0DB1D100CF7073 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0D322EAA1C0F1468001F8EC2 /* Categories */,
+				0D322EA31C0F0FEB001F8EC2 /* Views */,
 				0D3EF29A1C0DB1E000CF7073 /* ViewControllers */,
 			);
 			path = Classes;
@@ -297,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D322EA91C0F102C001F8EC2 /* TTProgressHUD.xib in Resources */,
 				0D3EF27F1C0D9E5200CF7073 /* Main.storyboard in Resources */,
 				0D3EF2841C0D9E5200CF7073 /* LaunchScreen.xib in Resources */,
 				0D3EF2811C0D9E5200CF7073 /* Images.xcassets in Resources */,
@@ -365,8 +403,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D322EA71C0F1002001F8EC2 /* TTProgressHUD.m in Sources */,
 				0D3EF29E1C0DB21C00CF7073 /* TTNavigationController.m in Sources */,
 				0D3EF2791C0D9E5200CF7073 /* AppDelegate.m in Sources */,
+				0D322EAD1C0F1488001F8EC2 /* UIColor+TTColor.m in Sources */,
 				0D3EF2AC1C0DB2EC00CF7073 /* TTAuthenticateViewController.m in Sources */,
 				0D3EF2A51C0DB25000CF7073 /* TTRootViewController.m in Sources */,
 				0D3EF2B61C0DB80000CF7073 /* TTAddActivityViewController.m in Sources */,

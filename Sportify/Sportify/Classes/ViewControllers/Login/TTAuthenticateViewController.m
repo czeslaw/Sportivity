@@ -8,6 +8,7 @@
 
 #import "TTAuthenticateViewController.h"
 #import <Parse/Parse.h>
+#import "TTProgressHUD.h"
 
 static const CGFloat kAdditionalViewOffsetOverKeyboard = 10.0f;
 
@@ -244,6 +245,10 @@ typedef NS_ENUM(NSInteger, TTAuthenticationState){
 - (void)proceedWithLogin {
 	
 	__weak typeof (self) weakSelf = self;
+
+//TODO: hardcoded strings
+	TTProgressHUD *progressHUD = [TTProgressHUD showProgressHUDWithTitle:@"Logging in..."
+														inViewController:self];
 	
 //TODO: add progress handler and block UI
 	[PFUser logInWithUsernameInBackground:self.textFieldUsername.text
