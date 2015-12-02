@@ -16,9 +16,7 @@
 		0D3EF29E1C0DB21C00CF7073 /* TTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF29D1C0DB21C00CF7073 /* TTNavigationController.m */; };
 		0D3EF2A11C0DB22B00CF7073 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2A01C0DB22B00CF7073 /* TTBaseViewController.m */; };
 		0D3EF2A51C0DB25000CF7073 /* TTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2A41C0DB25000CF7073 /* TTRootViewController.m */; };
-		0D3EF2A91C0DB2D200CF7073 /* TTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2A81C0DB2D200CF7073 /* TTLoginViewController.m */; };
 		0D3EF2AC1C0DB2EC00CF7073 /* TTAuthenticateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2AB1C0DB2EC00CF7073 /* TTAuthenticateViewController.m */; };
-		0D3EF2AF1C0DB30100CF7073 /* TTRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2AE1C0DB30100CF7073 /* TTRegisterViewController.m */; };
 		0D3EF2B61C0DB80000CF7073 /* TTAddActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2B51C0DB80000CF7073 /* TTAddActivityViewController.m */; };
 		EFC45CF0B84D7E077B6A18C9 /* libPods-Sportify.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D0208F66C3288497A1B55B /* libPods-Sportify.a */; };
 /* End PBXBuildFile section */
@@ -51,12 +49,8 @@
 		0D3EF2A01C0DB22B00CF7073 /* TTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseViewController.m; sourceTree = "<group>"; };
 		0D3EF2A31C0DB25000CF7073 /* TTRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRootViewController.h; sourceTree = "<group>"; };
 		0D3EF2A41C0DB25000CF7073 /* TTRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRootViewController.m; sourceTree = "<group>"; };
-		0D3EF2A71C0DB2D200CF7073 /* TTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLoginViewController.h; sourceTree = "<group>"; };
-		0D3EF2A81C0DB2D200CF7073 /* TTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLoginViewController.m; sourceTree = "<group>"; };
 		0D3EF2AA1C0DB2EC00CF7073 /* TTAuthenticateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAuthenticateViewController.h; sourceTree = "<group>"; };
 		0D3EF2AB1C0DB2EC00CF7073 /* TTAuthenticateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAuthenticateViewController.m; sourceTree = "<group>"; };
-		0D3EF2AD1C0DB30100CF7073 /* TTRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRegisterViewController.h; sourceTree = "<group>"; };
-		0D3EF2AE1C0DB30100CF7073 /* TTRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRegisterViewController.m; sourceTree = "<group>"; };
 		0D3EF2B41C0DB80000CF7073 /* TTAddActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAddActivityViewController.h; sourceTree = "<group>"; };
 		0D3EF2B51C0DB80000CF7073 /* TTAddActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAddActivityViewController.m; sourceTree = "<group>"; };
 		3CFB77F97BF6E063210B1AB6 /* Pods-Sportify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sportify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sportify/Pods-Sportify.release.xcconfig"; sourceTree = "<group>"; };
@@ -189,10 +183,6 @@
 			children = (
 				0D3EF2AA1C0DB2EC00CF7073 /* TTAuthenticateViewController.h */,
 				0D3EF2AB1C0DB2EC00CF7073 /* TTAuthenticateViewController.m */,
-				0D3EF2A71C0DB2D200CF7073 /* TTLoginViewController.h */,
-				0D3EF2A81C0DB2D200CF7073 /* TTLoginViewController.m */,
-				0D3EF2AD1C0DB30100CF7073 /* TTRegisterViewController.h */,
-				0D3EF2AE1C0DB30100CF7073 /* TTRegisterViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -375,8 +365,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D3EF2A91C0DB2D200CF7073 /* TTLoginViewController.m in Sources */,
-				0D3EF2AF1C0DB30100CF7073 /* TTRegisterViewController.m in Sources */,
 				0D3EF29E1C0DB21C00CF7073 /* TTNavigationController.m in Sources */,
 				0D3EF2791C0D9E5200CF7073 /* AppDelegate.m in Sources */,
 				0D3EF2AC1C0DB2EC00CF7073 /* TTAuthenticateViewController.m in Sources */,

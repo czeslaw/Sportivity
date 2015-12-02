@@ -24,6 +24,8 @@ static NSString *const kKeyParseClientKey = @"A46RfvkCTbsGzEzWsDBeEGEuieFBa1Wwqt
 	[Parse setApplicationId:kKeyParseApplicationID
 				  clientKey:kKeyParseClientKey];
 	
+	self.window.backgroundColor = [UIColor whiteColor];
+	
     return YES;
 }
 
