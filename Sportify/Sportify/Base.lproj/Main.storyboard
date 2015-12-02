@@ -177,6 +177,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="p4r-sB-7RK">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="3qz-zC-sAR">
+                            <connections>
+                                <action selector="tapButtonLogout:" destination="BYZ-38-t0r" id="AUW-Ap-Bax"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="LbV-dB-TJR">
                             <connections>
                                 <segue destination="ECo-Aw-FAb" kind="show" id="7tC-dV-lSF"/>
@@ -184,6 +189,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="barButtonItemLogout" destination="3qz-zC-sAR" id="T5O-fu-Xpw"/>
                         <segue destination="e23-0Y-Dal" kind="presentation" identifier="kIdentifierSegueRootToAuthenticate" id="lUh-Xl-a8B"/>
                     </connections>
                 </viewController>
