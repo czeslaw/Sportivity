@@ -7,6 +7,7 @@
 //
 
 #import "TTActivity.h"
+#import "NSDate+TTCalculations.h"
 
 NSString *const kKeyParseClassNameActivity = @"Activity";
 
@@ -32,6 +33,11 @@ NSString *const kKeyParseActivityUser = @"user";
 	activity.type = activityType;
 	
 	return activity;
+}
+
+- (NSString *)period {
+	
+	return [self.dateEnd stringPeriodBetweenDate:self.dateStart];
 }
 
 @end

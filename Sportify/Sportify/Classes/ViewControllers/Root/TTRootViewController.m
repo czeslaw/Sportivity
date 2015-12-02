@@ -14,10 +14,12 @@
 #import "TTNetworkingEngine.h"
 
 static NSString *const kIdentifierSegueRootToAuthenticate = @"kIdentifierSegueRootToAuthenticate";
+static NSString *const kIdentifierCellRootActivity = @"kIdentifierCellRootActivity";
 
-@interface TTRootViewController ()
+@interface TTRootViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UIBarButtonItem *barButtonItemLogout;
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @end
 
@@ -49,6 +51,8 @@ static NSString *const kIdentifierSegueRootToAuthenticate = @"kIdentifierSegueRo
 
 - (void)refreshData {
 
+	__weak typeof (self) weakSelf = self;
+	
 //TODO: hardcoded strings
 	__block TTProgressHUD *progressHUD = [TTProgressHUD showProgressHUDWithTitle:@"Synchronizing..."
 																inViewController:self.navigationController];
@@ -69,17 +73,7 @@ static NSString *const kIdentifierSegueRootToAuthenticate = @"kIdentifierSegueRo
 															   show];
 														  }
 														  
-														  NSLog(@"activities: ");
-														  for (TTActivity *activity in [[TTActivitiesDatasource sharedInstance] arrayObjects]) {
-															  
-															  NSLog(@"%@",activity.parseObject);
-														  }
-														  NSLog(@"activity types: ");
-														  for (TTActivityType *activityType in [[TTActivityTypesDatasource sharedInstance] arrayObjects]) {
-															  
-															  NSLog(@"%@",activityType.parseObject);
-														  }
-														  
+														  [weakSelf.tableView reloadData];
 														  [progressHUD hide];
 													  }];
 }
@@ -111,6 +105,36 @@ static NSString *const kIdentifierSegueRootToAuthenticate = @"kIdentifierSegueRo
 			[weakSelf cleanUpAfterLogout];
 		}
 	}];
+}
+
+#pragma mark - UITableView Datasource & Delegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	
+	return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	
+	return [TTActivitiesDatasource sharedInstance].arrayObjects.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kIdentifierCellRootActivity
+															forIndexPath:indexPath];
+	
+	TTActivity *activity = [TTActivitiesDatasource sharedInstance].arrayObjects[indexPath.row];
+	
+	cell.textLabel.text = activity.type.type;
+	
+	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+	dateFormatter.dateStyle = NSDateFormatterShortStyle;
+	dateFormatter.timeStyle = NSDateFormatterShortStyle;
+	
+	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@ (%@)",activity.dateStart,activity.dateEnd,activity.period];
+	
+	return cell;
 }
 
 #pragma mark - Clean Up

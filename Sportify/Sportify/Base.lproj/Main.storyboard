@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -174,7 +175,57 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hvh-c5-zlH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="KF1-Eb-ay5">
+                                    <rect key="frame" x="0.0" y="64" width="600" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="kIdentifierCellRootActivity" textLabel="x9w-G6-hHm" detailTextLabel="vyL-HW-D0G" style="IBUITableViewCellStyleSubtitle" id="azd-kx-dRc">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="azd-kx-dRc" id="4G5-0k-wyk">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x9w-G6-hHm">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vyL-HW-D0G">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8vs-Al-cVR"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="y1A-cb-hKi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hvh-c5-zlH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MQ8-Fe-1gd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hvh-c5-zlH" secondAttribute="bottom" id="TlW-7a-rRl"/>
+                            <constraint firstItem="hvh-c5-zlH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZIe-lK-ggN"/>
+                            <constraint firstItem="hvh-c5-zlH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="lMk-ag-drl"/>
+                            <constraint firstAttribute="trailing" secondItem="hvh-c5-zlH" secondAttribute="trailing" id="zgr-u4-fg0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MQ8-Fe-1gd"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="p4r-sB-7RK">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="3qz-zC-sAR">
@@ -190,6 +241,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="barButtonItemLogout" destination="3qz-zC-sAR" id="T5O-fu-Xpw"/>
+                        <outlet property="tableView" destination="hvh-c5-zlH" id="Wvf-G9-LCs"/>
                         <segue destination="e23-0Y-Dal" kind="presentation" identifier="kIdentifierSegueRootToAuthenticate" id="lUh-Xl-a8B"/>
                     </connections>
                 </viewController>

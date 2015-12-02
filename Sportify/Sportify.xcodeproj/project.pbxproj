@@ -16,6 +16,7 @@
 		0D322ECA1C0F3FD6001F8EC2 /* TTNetworkingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D322EC61C0F3FD6001F8EC2 /* TTNetworkingEngine.m */; };
 		0D322ECD1C0F3FE6001F8EC2 /* TTActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D322ECC1C0F3FE6001F8EC2 /* TTActivity.m */; };
 		0D322ED01C0F3FF5001F8EC2 /* TTActivityType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D322ECF1C0F3FF5001F8EC2 /* TTActivityType.m */; };
+		0D322ED71C0F521B001F8EC2 /* NSDate+TTCalculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D322ED61C0F521B001F8EC2 /* NSDate+TTCalculations.m */; };
 		0D3EF2761C0D9E5200CF7073 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2751C0D9E5200CF7073 /* main.m */; };
 		0D3EF2791C0D9E5200CF7073 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2781C0D9E5200CF7073 /* AppDelegate.m */; };
 		0D3EF27F1C0D9E5200CF7073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3EF27D1C0D9E5200CF7073 /* Main.storyboard */; };
@@ -59,6 +60,8 @@
 		0D322ECE1C0F3FF5001F8EC2 /* TTActivityType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTActivityType.h; sourceTree = "<group>"; };
 		0D322ECF1C0F3FF5001F8EC2 /* TTActivityType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTActivityType.m; sourceTree = "<group>"; };
 		0D322ED11C0F418C001F8EC2 /* TTSerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSerializable.h; sourceTree = "<group>"; };
+		0D322ED51C0F521A001F8EC2 /* NSDate+TTCalculations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TTCalculations.h"; sourceTree = "<group>"; };
+		0D322ED61C0F521B001F8EC2 /* NSDate+TTCalculations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TTCalculations.m"; sourceTree = "<group>"; };
 		0D3EF2701C0D9E5200CF7073 /* Sportify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sportify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3EF2741C0D9E5200CF7073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D3EF2751C0D9E5200CF7073 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 			children = (
 				0D322EAB1C0F1488001F8EC2 /* UIColor+TTColor.h */,
 				0D322EAC1C0F1488001F8EC2 /* UIColor+TTColor.m */,
+				0D322ED51C0F521A001F8EC2 /* NSDate+TTCalculations.h */,
+				0D322ED61C0F521B001F8EC2 /* NSDate+TTCalculations.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -465,6 +470,7 @@
 				0D3EF2791C0D9E5200CF7073 /* AppDelegate.m in Sources */,
 				0D322EC81C0F3FD6001F8EC2 /* TTActivityTypesDatasource.m in Sources */,
 				0D322EAD1C0F1488001F8EC2 /* UIColor+TTColor.m in Sources */,
+				0D322ED71C0F521B001F8EC2 /* NSDate+TTCalculations.m in Sources */,
 				0D322ECD1C0F3FE6001F8EC2 /* TTActivity.m in Sources */,
 				0D3EF2AC1C0DB2EC00CF7073 /* TTAuthenticateViewController.m in Sources */,
 				0D3EF2A51C0DB25000CF7073 /* TTRootViewController.m in Sources */,

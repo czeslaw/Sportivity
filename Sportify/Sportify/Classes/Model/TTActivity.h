@@ -22,4 +22,6 @@ extern NSString *const kKeyParseActivityUser;
 @property (nonatomic, copy) NSDate *dateStart;
 @property (nonatomic, copy) NSDate *dateEnd;
 
+- (NSString *)period;
+
 @end
