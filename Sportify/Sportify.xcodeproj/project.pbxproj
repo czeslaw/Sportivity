@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D322EA71C0F1002001F8EC2 /* TTProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D322EA61C0F1002001F8EC2 /* TTProgressHUD.m */; };
+		0D322EA91C0F102C001F8EC2 /* TTProgressHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D322EA81C0F102C001F8EC2 /* TTProgressHUD.xib */; };
+		0D322EAD1C0F1488001F8EC2 /* UIColor+TTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D322EAC1C0F1488001F8EC2 /* UIColor+TTColor.m */; };
+		0D322EC71C0F3FD6001F8EC2 /* TTActivitiesDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D322EBF1C0F3FD6001F8EC2 /* TTActivitiesDatasource.m */; };
+		0D322EC81C0F3FD6001F8EC2 /* TTActivityTypesDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D322EC11C0F3FD6001F8EC2 /* TTActivityTypesDatasource.m */; };
+		0D322EC91C0F3FD6001F8EC2 /* TTDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D322EC31C0F3FD6001F8EC2 /* TTDatasource.m */; };
+		0D322ECA1C0F3FD6001F8EC2 /* TTNetworkingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D322EC61C0F3FD6001F8EC2 /* TTNetworkingEngine.m */; };
+		0D322ECD1C0F3FE6001F8EC2 /* TTActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D322ECC1C0F3FE6001F8EC2 /* TTActivity.m */; };
+		0D322ED01C0F3FF5001F8EC2 /* TTActivityType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D322ECF1C0F3FF5001F8EC2 /* TTActivityType.m */; };
+		0D322ED71C0F521B001F8EC2 /* NSDate+TTCalculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D322ED61C0F521B001F8EC2 /* NSDate+TTCalculations.m */; };
 		0D3EF2761C0D9E5200CF7073 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2751C0D9E5200CF7073 /* main.m */; };
 		0D3EF2791C0D9E5200CF7073 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2781C0D9E5200CF7073 /* AppDelegate.m */; };
-		0D3EF27C1C0D9E5200CF7073 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF27B1C0D9E5200CF7073 /* ViewController.m */; };
 		0D3EF27F1C0D9E5200CF7073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3EF27D1C0D9E5200CF7073 /* Main.storyboard */; };
 		0D3EF2811C0D9E5200CF7073 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D3EF2801C0D9E5200CF7073 /* Images.xcassets */; };
 		0D3EF2841C0D9E5200CF7073 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3EF2821C0D9E5200CF7073 /* LaunchScreen.xib */; };
 		0D3EF2901C0D9E5200CF7073 /* SportifyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF28F1C0D9E5200CF7073 /* SportifyTests.m */; };
+		0D3EF29E1C0DB21C00CF7073 /* TTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF29D1C0DB21C00CF7073 /* TTNavigationController.m */; };
+		0D3EF2A11C0DB22B00CF7073 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2A01C0DB22B00CF7073 /* TTBaseViewController.m */; };
+		0D3EF2A51C0DB25000CF7073 /* TTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2A41C0DB25000CF7073 /* TTRootViewController.m */; };
+		0D3EF2AC1C0DB2EC00CF7073 /* TTAuthenticateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2AB1C0DB2EC00CF7073 /* TTAuthenticateViewController.m */; };
+		0D3EF2B61C0DB80000CF7073 /* TTAddActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EF2B51C0DB80000CF7073 /* TTAddActivityViewController.m */; };
+		EFC45CF0B84D7E077B6A18C9 /* libPods-Sportify.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D0208F66C3288497A1B55B /* libPods-Sportify.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +42,50 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D322EA51C0F1002001F8EC2 /* TTProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTProgressHUD.h; sourceTree = "<group>"; };
+		0D322EA61C0F1002001F8EC2 /* TTProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTProgressHUD.m; sourceTree = "<group>"; };
+		0D322EA81C0F102C001F8EC2 /* TTProgressHUD.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTProgressHUD.xib; sourceTree = "<group>"; };
+		0D322EAB1C0F1488001F8EC2 /* UIColor+TTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TTColor.h"; sourceTree = "<group>"; };
+		0D322EAC1C0F1488001F8EC2 /* UIColor+TTColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TTColor.m"; sourceTree = "<group>"; };
+		0D322EBE1C0F3FD6001F8EC2 /* TTActivitiesDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTActivitiesDatasource.h; sourceTree = "<group>"; };
+		0D322EBF1C0F3FD6001F8EC2 /* TTActivitiesDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTActivitiesDatasource.m; sourceTree = "<group>"; };
+		0D322EC01C0F3FD6001F8EC2 /* TTActivityTypesDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTActivityTypesDatasource.h; sourceTree = "<group>"; };
+		0D322EC11C0F3FD6001F8EC2 /* TTActivityTypesDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTActivityTypesDatasource.m; sourceTree = "<group>"; };
+		0D322EC21C0F3FD6001F8EC2 /* TTDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDatasource.h; sourceTree = "<group>"; };
+		0D322EC31C0F3FD6001F8EC2 /* TTDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDatasource.m; sourceTree = "<group>"; };
+		0D322EC51C0F3FD6001F8EC2 /* TTNetworkingEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNetworkingEngine.h; sourceTree = "<group>"; };
+		0D322EC61C0F3FD6001F8EC2 /* TTNetworkingEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNetworkingEngine.m; sourceTree = "<group>"; };
+		0D322ECB1C0F3FE6001F8EC2 /* TTActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTActivity.h; sourceTree = "<group>"; };
+		0D322ECC1C0F3FE6001F8EC2 /* TTActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTActivity.m; sourceTree = "<group>"; };
+		0D322ECE1C0F3FF5001F8EC2 /* TTActivityType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTActivityType.h; sourceTree = "<group>"; };
+		0D322ECF1C0F3FF5001F8EC2 /* TTActivityType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTActivityType.m; sourceTree = "<group>"; };
+		0D322ED11C0F418C001F8EC2 /* TTSerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSerializable.h; sourceTree = "<group>"; };
+		0D322ED51C0F521A001F8EC2 /* NSDate+TTCalculations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TTCalculations.h"; sourceTree = "<group>"; };
+		0D322ED61C0F521B001F8EC2 /* NSDate+TTCalculations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TTCalculations.m"; sourceTree = "<group>"; };
 		0D3EF2701C0D9E5200CF7073 /* Sportify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sportify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3EF2741C0D9E5200CF7073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D3EF2751C0D9E5200CF7073 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D3EF2771C0D9E5200CF7073 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D3EF2781C0D9E5200CF7073 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0D3EF27A1C0D9E5200CF7073 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0D3EF27B1C0D9E5200CF7073 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0D3EF27E1C0D9E5200CF7073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D3EF2801C0D9E5200CF7073 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0D3EF2831C0D9E5200CF7073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0D3EF2891C0D9E5200CF7073 /* SportifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3EF28E1C0D9E5200CF7073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D3EF28F1C0D9E5200CF7073 /* SportifyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SportifyTests.m; sourceTree = "<group>"; };
+		0D3EF29C1C0DB21C00CF7073 /* TTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigationController.h; sourceTree = "<group>"; };
+		0D3EF29D1C0DB21C00CF7073 /* TTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNavigationController.m; sourceTree = "<group>"; };
+		0D3EF29F1C0DB22B00CF7073 /* TTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseViewController.h; sourceTree = "<group>"; };
+		0D3EF2A01C0DB22B00CF7073 /* TTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseViewController.m; sourceTree = "<group>"; };
+		0D3EF2A31C0DB25000CF7073 /* TTRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRootViewController.h; sourceTree = "<group>"; };
+		0D3EF2A41C0DB25000CF7073 /* TTRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRootViewController.m; sourceTree = "<group>"; };
+		0D3EF2AA1C0DB2EC00CF7073 /* TTAuthenticateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAuthenticateViewController.h; sourceTree = "<group>"; };
+		0D3EF2AB1C0DB2EC00CF7073 /* TTAuthenticateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAuthenticateViewController.m; sourceTree = "<group>"; };
+		0D3EF2B41C0DB80000CF7073 /* TTAddActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAddActivityViewController.h; sourceTree = "<group>"; };
+		0D3EF2B51C0DB80000CF7073 /* TTAddActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAddActivityViewController.m; sourceTree = "<group>"; };
+		3CFB77F97BF6E063210B1AB6 /* Pods-Sportify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sportify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sportify/Pods-Sportify.release.xcconfig"; sourceTree = "<group>"; };
+		A4D0208F66C3288497A1B55B /* libPods-Sportify.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sportify.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA943F2B77B5C92E685142D8 /* Pods-Sportify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sportify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sportify/Pods-Sportify.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC45CF0B84D7E077B6A18C9 /* libPods-Sportify.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,14 +107,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D322EA31C0F0FEB001F8EC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D322EA41C0F0FF5001F8EC2 /* ProgressHUD */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D322EA41C0F0FF5001F8EC2 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0D322EA51C0F1002001F8EC2 /* TTProgressHUD.h */,
+				0D322EA61C0F1002001F8EC2 /* TTProgressHUD.m */,
+				0D322EA81C0F102C001F8EC2 /* TTProgressHUD.xib */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		0D322EAA1C0F1468001F8EC2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0D322EAB1C0F1488001F8EC2 /* UIColor+TTColor.h */,
+				0D322EAC1C0F1488001F8EC2 /* UIColor+TTColor.m */,
+				0D322ED51C0F521A001F8EC2 /* NSDate+TTCalculations.h */,
+				0D322ED61C0F521B001F8EC2 /* NSDate+TTCalculations.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		0D322EBC1C0F3FD6001F8EC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D322ED11C0F418C001F8EC2 /* TTSerializable.h */,
+				0D322ECB1C0F3FE6001F8EC2 /* TTActivity.h */,
+				0D322ECC1C0F3FE6001F8EC2 /* TTActivity.m */,
+				0D322ECE1C0F3FF5001F8EC2 /* TTActivityType.h */,
+				0D322ECF1C0F3FF5001F8EC2 /* TTActivityType.m */,
+				0D322EBD1C0F3FD6001F8EC2 /* Datasources */,
+				0D322EC41C0F3FD6001F8EC2 /* Networking */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D322EBD1C0F3FD6001F8EC2 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				0D322EBE1C0F3FD6001F8EC2 /* TTActivitiesDatasource.h */,
+				0D322EBF1C0F3FD6001F8EC2 /* TTActivitiesDatasource.m */,
+				0D322EC01C0F3FD6001F8EC2 /* TTActivityTypesDatasource.h */,
+				0D322EC11C0F3FD6001F8EC2 /* TTActivityTypesDatasource.m */,
+				0D322EC21C0F3FD6001F8EC2 /* TTDatasource.h */,
+				0D322EC31C0F3FD6001F8EC2 /* TTDatasource.m */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		0D322EC41C0F3FD6001F8EC2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0D322EC51C0F3FD6001F8EC2 /* TTNetworkingEngine.h */,
+				0D322EC61C0F3FD6001F8EC2 /* TTNetworkingEngine.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		0D3EF2671C0D9E5100CF7073 = {
 			isa = PBXGroup;
 			children = (
 				0D3EF2721C0D9E5200CF7073 /* Sportify */,
 				0D3EF28C1C0D9E5200CF7073 /* SportifyTests */,
 				0D3EF2711C0D9E5200CF7073 /* Products */,
+				2BE426AB02E1782F857FA9A3 /* Pods */,
+				209108DCBA01E86564A08332 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		0D3EF2711C0D9E5200CF7073 /* Products */ = {
 			isa = PBXGroup;
@@ -83,8 +198,7 @@
 			children = (
 				0D3EF2771C0D9E5200CF7073 /* AppDelegate.h */,
 				0D3EF2781C0D9E5200CF7073 /* AppDelegate.m */,
-				0D3EF27A1C0D9E5200CF7073 /* ViewController.h */,
-				0D3EF27B1C0D9E5200CF7073 /* ViewController.m */,
+				0D3EF2991C0DB1D100CF7073 /* Classes */,
 				0D3EF27D1C0D9E5200CF7073 /* Main.storyboard */,
 				0D3EF2801C0D9E5200CF7073 /* Images.xcassets */,
 				0D3EF2821C0D9E5200CF7073 /* LaunchScreen.xib */,
@@ -119,6 +233,84 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0D3EF2991C0DB1D100CF7073 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0D322EBC1C0F3FD6001F8EC2 /* Model */,
+				0D322EAA1C0F1468001F8EC2 /* Categories */,
+				0D322EA31C0F0FEB001F8EC2 /* Views */,
+				0D3EF29A1C0DB1E000CF7073 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0D3EF29A1C0DB1E000CF7073 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D3EF2B01C0DB70000CF7073 /* AddActivity */,
+				0D3EF2A61C0DB2C900CF7073 /* Login */,
+				0D3EF2A21C0DB24800CF7073 /* Root */,
+				0D3EF29B1C0DB1F100CF7073 /* Base */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0D3EF29B1C0DB1F100CF7073 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0D3EF29C1C0DB21C00CF7073 /* TTNavigationController.h */,
+				0D3EF29D1C0DB21C00CF7073 /* TTNavigationController.m */,
+				0D3EF29F1C0DB22B00CF7073 /* TTBaseViewController.h */,
+				0D3EF2A01C0DB22B00CF7073 /* TTBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		0D3EF2A21C0DB24800CF7073 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				0D3EF2A31C0DB25000CF7073 /* TTRootViewController.h */,
+				0D3EF2A41C0DB25000CF7073 /* TTRootViewController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		0D3EF2A61C0DB2C900CF7073 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0D3EF2AA1C0DB2EC00CF7073 /* TTAuthenticateViewController.h */,
+				0D3EF2AB1C0DB2EC00CF7073 /* TTAuthenticateViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0D3EF2B01C0DB70000CF7073 /* AddActivity */ = {
+			isa = PBXGroup;
+			children = (
+				0D3EF2B41C0DB80000CF7073 /* TTAddActivityViewController.h */,
+				0D3EF2B51C0DB80000CF7073 /* TTAddActivityViewController.m */,
+			);
+			path = AddActivity;
+			sourceTree = "<group>";
+		};
+		209108DCBA01E86564A08332 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4D0208F66C3288497A1B55B /* libPods-Sportify.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BE426AB02E1782F857FA9A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA943F2B77B5C92E685142D8 /* Pods-Sportify.debug.xcconfig */,
+				3CFB77F97BF6E063210B1AB6 /* Pods-Sportify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +318,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D3EF2931C0D9E5200CF7073 /* Build configuration list for PBXNativeTarget "Sportify" */;
 			buildPhases = (
+				6EBD6AAC2DA9189179606C06 /* Check Pods Manifest.lock */,
 				0D3EF26C1C0D9E5100CF7073 /* Sources */,
 				0D3EF26D1C0D9E5100CF7073 /* Frameworks */,
 				0D3EF26E1C0D9E5100CF7073 /* Resources */,
+				511BA2FC4A4FF203ED9D28E4 /* Embed Pods Frameworks */,
+				C5C01CB8A45C3E5FFFD918AB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +358,7 @@
 		0D3EF2681C0D9E5100CF7073 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TT;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Tooploox;
 				TargetAttributes = {
@@ -199,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D322EA91C0F102C001F8EC2 /* TTProgressHUD.xib in Resources */,
 				0D3EF27F1C0D9E5200CF7073 /* Main.storyboard in Resources */,
 				0D3EF2841C0D9E5200CF7073 /* LaunchScreen.xib in Resources */,
 				0D3EF2811C0D9E5200CF7073 /* Images.xcassets in Resources */,
@@ -214,14 +411,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		511BA2FC4A4FF203ED9D28E4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sportify/Pods-Sportify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EBD6AAC2DA9189179606C06 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C01CB8A45C3E5FFFD918AB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sportify/Pods-Sportify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D3EF26C1C0D9E5100CF7073 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D3EF27C1C0D9E5200CF7073 /* ViewController.m in Sources */,
+				0D322EC91C0F3FD6001F8EC2 /* TTDatasource.m in Sources */,
+				0D322EA71C0F1002001F8EC2 /* TTProgressHUD.m in Sources */,
+				0D3EF29E1C0DB21C00CF7073 /* TTNavigationController.m in Sources */,
 				0D3EF2791C0D9E5200CF7073 /* AppDelegate.m in Sources */,
+				0D322EC81C0F3FD6001F8EC2 /* TTActivityTypesDatasource.m in Sources */,
+				0D322EAD1C0F1488001F8EC2 /* UIColor+TTColor.m in Sources */,
+				0D322ED71C0F521B001F8EC2 /* NSDate+TTCalculations.m in Sources */,
+				0D322ECD1C0F3FE6001F8EC2 /* TTActivity.m in Sources */,
+				0D3EF2AC1C0DB2EC00CF7073 /* TTAuthenticateViewController.m in Sources */,
+				0D3EF2A51C0DB25000CF7073 /* TTRootViewController.m in Sources */,
+				0D322ECA1C0F3FD6001F8EC2 /* TTNetworkingEngine.m in Sources */,
+				0D3EF2B61C0DB80000CF7073 /* TTAddActivityViewController.m in Sources */,
 				0D3EF2761C0D9E5200CF7073 /* main.m in Sources */,
+				0D3EF2A11C0DB22B00CF7073 /* TTBaseViewController.m in Sources */,
+				0D322ED01C0F3FF5001F8EC2 /* TTActivityType.m in Sources */,
+				0D322EC71C0F3FD6001F8EC2 /* TTActivitiesDatasource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,9 +605,11 @@
 		};
 		0D3EF2941C0D9E5200CF7073 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA943F2B77B5C92E685142D8 /* Pods-Sportify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Sportify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,9 +617,11 @@
 		};
 		0D3EF2951C0D9E5200CF7073 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CFB77F97BF6E063210B1AB6 /* Pods-Sportify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Sportify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +680,7 @@
 				0D3EF2951C0D9E5200CF7073 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D3EF2961C0D9E5200CF7073 /* Build configuration list for PBXNativeTarget "SportifyTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +689,7 @@
 				0D3EF2981C0D9E5200CF7073 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

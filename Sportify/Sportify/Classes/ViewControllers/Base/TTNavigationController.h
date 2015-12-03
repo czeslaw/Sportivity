@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  TTNavigationController.h
 //  Sportify
 //
 //  Created by czeslaw on 01.12.2015.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface TTNavigationController : UINavigationController
 
 @end
-
